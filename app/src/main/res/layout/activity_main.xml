@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/inc"
+            android:layout_width="wrap_content"
+            android:text="Incrémenter"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:id="@+id/dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Décrémenter"
+            android:textAllCaps="false">
+        </Button>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:text="Réinitialiser"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
